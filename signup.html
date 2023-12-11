@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="website icon" type="png" href="https://ibomma-apk.net/wp-content/uploads/2523/06/screen-4-removebg-preview-e1687851152855.png">
+    <title>Sign up</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Raleway:wght@100&family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: rgb(60, 58, 58);
+            color: gold;
+            
+        }
+        #parent{
+            
+           
+            /* height: 90vh; */
+            /* width: 80vw; */
+            margin:auto;
+            margin-top: 5vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            box-sizing: content-box;
+            /* box-shadow: 5px 5px 0px 0px rgb(211, 218, 224); */
+            
+           /* box-shadow: 4px 4px 4px 4px lightcyan; */
+        }
+        .child{
+            
+            height: 90vh;
+            width:40vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+            background-color:rgb(146, 183, 198) ;
+            overflow: hidden;
+        
+         
+        }
+        #is{
+            margin: auto;
+            color: black;
+            font-size: 2.7em;
+            text-shadow: 0px 0px 30px green, 0px 0px 80px green,0px 0px 90px green, 0px 0px 120px green;
+            
+        }
+        img{
+            height: 50vh;
+            width: 40vw;
+            animation: emege 3s infinite alternate;
+         
+        }
+        @keyframes emege{
+            0%{
+                transform: scale(1.05);
+            }
+            100%{
+                transform: scale(1.1);
+            }
+        }
+        .child2{
+           
+            height: 90vh;
+            width:40vw;
+            background-color:black;
+            /* display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;  */
+            text-align: center;
+            font-family: 'Caveat', cursive;
+        }
+        #csp{
+            margin-top: 10%;
+            color: greenyellow;
+        }
+        label{
+            margin-right: 70%;
+            font-family: 'Caveat', cursive;
+            font-size: 1.5em;
+            color: greenyellow;
+        }
+        input{
+            height: 4vh;
+            width: 30vw;
+            border: 3px solid;
+            border-radius: 10px;
+            color: black;
+           
+        }
+       
+       p{
+        margin-left: 21vw;
+        font-family: 'Caveat', cursive;
+        color: gold;
+       }
+       #ca{
+        height: 5vh;
+        width: 15vw;
+        font-size: 1.5em;
+        border-radius: 5px;
+        font-family: 'Caveat', cursive;
+        background-color: rgb(146, 183, 198);
+        
+       }
+       #ca:hover{
+        cursor: pointer;
+        color: rgb(146, 5, 5);
+       }
+       #gg{
+        height: 2vh;
+        width: 1vw;
+       }
+       h6{
+        font-size: 1em;
+        color: gold;
+       }
+       #button9{
+        font-family: 'Caveat', cursive;
+        height: 4vh;
+        font-size: 1em;
+       }
+       #button9:hover{
+        cursor: pointer;
+       }
+       #mf{
+        background-color: rgb(146, 183, 198) ;
+        border: none;
+       
+        
+       }
+       li{
+        list-style: none;
+        font-size: 1.5em;
+        font-family: 'Caveat', cursive;
+       }
+       li::first-letter{
+        font-size: 2.6em;
+        color: goldenrod;
+
+       }
+       a{
+        color: greenyellow;
+        text-decoration: none;
+        font-size: 1.5em;
+       }
+
+    </style>
+</head>
+<body>
+    
+    <div id="parent">
+
+        
+    <div class="child">
+        <h1 id="is">iB⊛MMA STUDIO</h1><br>
+       <button onclick="myFunction()" id="mf"><li>Click Forest for SIGN UP page 😍</li> <img src="https://www.pngkey.com/png/full/65-659045_forest-png-free-image-forest-vector-png.png" alt="png" ></button>
+    </div>
+    <div class="child2">
+        <h1 id="csp">SIGN UP</h1>
+       &nbsp; <label for="name"> Name</label><br>
+       <input type="text" id="name" placeholder="your name" required><br><br>
+       &nbsp; <label for="email">Email</label><br>
+       <input type="email" id="email" placeholder="your email" required><br><br>
+        &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;<label for="password"> password</label>
+       <input type="password" id="password" placeholder="your password" required><br><br> 
+       <p>Terms and conditions</p><br>
+       <button id="ca">Create account</button>
+       <h6>-----or-----</h6> 
+       <button id="button9"><img src="google.png" alt="png" id="gg">&nbsp; &nbsp;&nbsp;Google Account</button >&nbsp;<button id="button9"><img src="facebook.png" alt="png" id="gg">&nbsp;&nbsp;&nbsp;Facebook Account</button><br><br>
+       Alredy have an account ? <a href="sign in.html">Log in 👈</a>
+      
+    </div>
+
+    </div>
+    <script>
+        function myFunction(){
+            let x = document.querySelector(".child2");
+            let y = document.querySelector(".child");
+           
+
+            y.style.borderTopRightRadius = "25px";
+            y.style.borderBottomRightRadius = "25px";
+            y.style.borderBottomLeftRadius = "25px";
+            y.style.borderTopLeftRadius = "25px";
+            
+           
+            if(x.style.display == "none" ){
+                x.style.display = "block";
+                x.style.boxShadow = "4px 4px 4px 4px lightcyan";
+                x.style.borderBottomRightRadius = "25px";
+                x.style.borderTopRightRadius = "25px";
+                y.style.boxShadow = "4px 4px 4px 4px lightcyan";
+                y.style.borderBottomRightRadius = "0px";
+                y.style.borderTopRightRadius = "0px";
+
+
+            }else{
+                x.style.display = "none"
+            }
+        }
+    
+    </script>
+</body>
+</html>
